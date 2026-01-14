@@ -65,3 +65,50 @@ h3{
     padding: 20px 40px;
     background-color: white;
 }
+
+.first-content{
+    padding: 40px 150px;
+    gap: 20px;
+}
+
+.first-content-text{
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.first-content-images{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.small-image{
+    height: 230px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.first-content-image1{
+    background-image: url(/images/breakfast-ideas.jpg);
+}
+
+.first-content-image2{
+    background-image: url(/images/vegetarian-ideas.jpg);
+}
+
+.first-content-image3{
+    background-image: url(/images/cold-weather-dinners.jpeg);
+}
+
+.spacer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.first-content-image-text{
+    margin-top: 15px;
+}
