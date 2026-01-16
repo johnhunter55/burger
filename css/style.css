@@ -21,7 +21,7 @@ header{
 }
 
 /* 2. Responsive adjustment for mobile */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .page-container {
     padding: 0 1rem;       /* Shrink padding to 1rem on small screens */
   }
@@ -74,7 +74,7 @@ a{
 .first-image{
     background-image: url('/images/hero-image.jpg');
     background-size: cover;
-    height: 500px;
+    height: 450px;
     width: 100%;
     position: relative;
 }
@@ -99,13 +99,13 @@ h3{
 
 .content-text{
     margin-top: 15px;
+    margin-bottom: 30px;
     font-size: 1.2em;
     font-weight: 400;
 }
 
 .first-content-images{
     display: flex;
-    margin-top: 20px;
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
@@ -119,17 +119,16 @@ h3{
 }
 
 .small-image{
-    height: 230px;
-    flex-basis: 300px;
-    flex-grow: 1;
-    max-width: 380px;  /* Stops it from getting wider than this */
+    height: 250px;
+    width: 100%;
     background-size: cover;
     background-position: center;
 }
 
 .four-image{
     height: 180px;
-    width: 250px;
+    width: 100%;
+    max-width: 300px;
     background-size: cover;
     background-position: center;
 }
@@ -149,19 +148,27 @@ h3{
     display: flex;
     text-align: center;
     flex-direction: column;
+    flex-basis: 340px;  /* Start wider */
+    flex-grow: 1;       /* Allow growing */
+    max-width: 350px;
+}
+
+.secound-content .spacer{
+    max-width: 250px;
+    flex-basis: 240px;
 }
 
 .first-content-image-text{
     height: 40px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-        background-color: white;
+    background-color: white;
 }
 
 .secound-section{
     background-color: #dadfea;
-    margin-top: 15px;
     width: 100%;
 }
 
