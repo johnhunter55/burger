@@ -120,7 +120,9 @@ h3{
 
 .small-image{
     height: 230px;
-    width: 300px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-width: 380px;  /* Stops it from getting wider than this */
     background-size: cover;
     background-position: center;
 }
