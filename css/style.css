@@ -13,17 +13,41 @@ header{
     width: 100%;
 }
 
-.littlebaby{
-    display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  /* CONSTRAINT SETTINGS */
-  max-width: 1200px; /* Stop expanding after 1200px */
-  margin: 0 auto;    /* Center the container horizontally */
-  padding: 1rem 2rem; /* Buffer space when screen is smaller than 1200px */
+/* 1. The Magic Container */
+.page-container {
+  max-width: 1200px;       /* Keeps everything from getting too wide on big screens */
+  margin: 0 auto;          /* Centers the content */
+  padding: 0 2rem;         /* Standard consistent spacing on sides */
+  width: 100%;
 }
 
+/* 2. Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 0 1rem;       /* Shrink padding to 1rem on small screens */
+  }
+}
+
+/* Update the Header Flex wrapper (formerly .littlebaby) */
+.littlebaby {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0; /* Vertical padding only, let .page-container handle the sides! */
+  /* Remove max-width and margin from here, the container handles it now */
+}
+
+/* Update First Section */
+.first-section {
+  padding: 40px 0; /* Remove the huge 150px side padding */
+  gap: 20px;
+  /* width: 100%;  <-- Remove this */
+}
+
+/* Update Second Section content */
+.secound-content {
+  padding: 40px 0; /* Remove the huge 150px side padding */
+}
 nav{
     display: flex;
   gap: 20px;
@@ -77,12 +101,6 @@ h3{
     background-color: white;
 }
 
-.first-section{
-    padding: 40px 150px;
-    gap: 20px;
-    width: 100%;
-}
-
 .content-text{
     margin-top: 15px;
     font-size: 1.2em;
@@ -132,13 +150,9 @@ h3{
 }
 
 .secound-section{
-    width: 100%;
     background-color: #dadfea;
     margin-top: 20px;
-}
-
-.secound-content{
-    padding: 40px 150px;
+    width: 100%;
 }
 
 .secound-content-image1{
