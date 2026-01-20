@@ -38,12 +38,6 @@ header{
 /* Update First Section */
 .first-section {
   padding: 40px 0;
-  gap: 20px;
-}
-
-/* Update Second Section content */
-.secound-content {
-  padding: 40px 0;
 }
 
 nav{
@@ -168,6 +162,7 @@ h3{
 }
 
 .secound-section{
+    padding: 40px 0;
     background-color: #dadfea;
     width: 100%;
 }
