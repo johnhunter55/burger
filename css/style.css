@@ -9,7 +9,6 @@
 
 header{
     background-color: #f1a536;
-    margin-bottom: 4px;
     width: 100%;
 }
 
@@ -82,7 +81,17 @@ a{
 }
 
 .first-image{
+    margin-top: 4px;
     background-image: url('/images/hero-image.jpg');
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    position: relative;
+}
+
+.first-image-recipe{
+    margin-top: 4px;
+    background-image: url('/images/burger-hero.jpg');
     background-size: cover;
     height: 450px;
     width: 100%;
