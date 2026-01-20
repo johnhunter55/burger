@@ -96,6 +96,7 @@ a{
     height: 450px;
     width: 100%;
     position: relative;
+    background-position: 50% 35%;
 }
 
 h3{
@@ -227,4 +228,20 @@ h3{
 
 .third-content-image3{
     background-image: url(/images/1519401403235.jpeg);
+}
+
+.mini-info{
+    display: flex;
+    height: 40px;
+    width: 40%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.info{
+    display: flex;
 }
