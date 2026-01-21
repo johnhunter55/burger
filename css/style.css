@@ -270,10 +270,98 @@ h3{
     font-size: 2.5em;
     font-family: rubik, sans-serif;
     letter-spacing: -0.02em;
-    margin: 40px 0;
+    margin-top: 40px;
 }
 
 .randombanner{
     padding: 0 100px;
     color: rgb(67, 67, 67);
+}
+
+.review-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.top-review {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stars {
+    color: #b12704;
+    font-size: 1.4em;
+}
+
+.review-count {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.save-recipe {
+    background-color: #a6311e;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.print-circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Recipe Details Grid */
+.recipe-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Ingredients narrower than Directions */
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.ingredients ul, .directions ol {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.ingredients h3, .directions h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sub-label {
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+.directions li {
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .recipe-details {
+        grid-template-columns: 1fr;
+    }
 }
