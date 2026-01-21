@@ -29,20 +29,18 @@ footer{
 }
 
 .page-container {
-  max-width: 1200px; /* Keeps everything from getting too wide on big screens */
-  margin: 0 auto; /* Centers the content */
-  padding: 0 2rem; /* Standard consistent spacing on sides */
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 2rem;
   width: 100%;
 }
 
-/* 2. Responsive adjustment for mobile */
 @media (max-width: 780px) {
   .page-container {
-    padding: 0 1rem;       /* Shrink padding to 1rem on small screens */
+    padding: 0 1rem;      
   }
 }
 
-/* Update the Header Flex wrapper (formerly .littlebaby) */
 .littlebaby {
   display: flex;
   justify-content: space-between;
@@ -50,7 +48,6 @@ footer{
   padding: 1rem 0;
 }
 
-/* Update First Section */
 .first-section {
   padding: 40px 0;
 }
@@ -186,14 +183,14 @@ h3{
 }
 
 .card-title {
-    min-height: 40px; /* Optional: Keeps it consistent if text is short */
+    min-height: 40px; 
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
-    padding: 10px 5px; /* Add padding: 10px top/bottom, 5px left/right */
-    text-align: center; /* Ensures multi-line text is centered */
+    padding: 10px 5px; 
+    text-align: center; 
 }
 
 .secound-section{
@@ -231,34 +228,34 @@ h3{
 }
 
 .bold{
-    font-weight: 800; /* Extra bold */
+    font-weight: 800; 
 }
 
 .info{
-    background-color: #e5e9f0; /* Matches the light blue-gray in your image */
-    padding: 20px 40px; /* Add breathing room around text */
-    font-family: 'Google Sans', sans-serif; /* Using your font */
+    background-color: #e5e9f0; 
+    padding: 20px 40px; 
+    font-family: 'Google Sans', sans-serif; 
     color: black;
-    margin-bottom: 30px; /* Space below this section */
+    margin-bottom: 30px; 
     width: 100%;
 }
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Create 3 equal columns */
-    gap: 10px 0; /* 10px vertical gap, 0px horizontal gap */
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10px 0; 
 }
 
-/* Individual Lines (e.g., Level: Easy) */
+
 .meta-item {
     font-size: 1rem;
-    font-weight: 400; /* Normal weight for the value (e.g., "10 min") */
+    font-weight: 400; 
 }
 
-/* The Bold Labels (e.g., "Level:", "Prep:") */
+
 .label {
-    font-weight: 700; /* Bold for the label */
-    margin-right: 5px; /* Small space after the colon */
+    font-weight: 700; 
+    margin-right: 5px; 
 }
 
 .time{
@@ -330,10 +327,9 @@ h3{
     cursor: pointer;
 }
 
-/* Recipe Details Grid */
 .recipe-details {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Ingredients narrower than Directions */
+    grid-template-columns: 1fr 2fr;
     gap: 40px;
     margin-top: 40px;
     text-align: left;
@@ -359,9 +355,19 @@ h3{
     margin-bottom: 15px;
 }
 
-/* Responsive adjustment */
 @media (max-width: 768px) {
     .recipe-details {
         grid-template-columns: 1fr;
     }
+}
+
+.video-wrapper {
+    margin: 30px auto; 
+    display: flex;
+    justify-content: center;
+}
+
+.video-wrapper iframe {
+    border-radius: 8px;  
+    border: none;
 }
